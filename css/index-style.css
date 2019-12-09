@@ -1,0 +1,848 @@
+  /* Geral */
+
+* {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  color: #001429;
+  text-decoration: none;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Homepage */
+
+/* Body da Homepage */
+
+.homepage {
+background-image: url(../img/backgrounds/bg.jpg);
+height: 662px;
+background-position: center center;
+background-repeat: no-repeat;
+background-position: fixed;
+overflow: hidden;
+}
+
+
+/* Header da Homepage */
+
+#slogan {
+  position: absolute;
+  margin-top: 40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #4575a5;
+  font-weight: bold;
+  cursor: none;
+
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #001429;
+  height: 80px;
+}
+
+.flex-container ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.traducao {
+  margin: 10px 0 20px 0;
+  list-style-type: none;
+  padding: 8px;
+}
+
+.traducao:hover {
+  background-color: silver;
+}
+
+/* Menu e submenu da Homepage */
+
+.tema3:hover .menu, .tema4:hover .menu, .tema6:hover .menu{
+  bottom: 0px;
+  height: 100%;
+}
+
+.menu {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #001429;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.menu > li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 20px;
+  height: 10%;
+  padding: 15px;
+  margin-top: -10%;
+}
+
+li:hover > .menu {
+  background-color: none;
+}
+
+.temas a {
+  color: #4575a5;
+  text-decoration: none;
+  background-color: #001429;
+  padding: 5px;
+}
+
+.menu a {
+  font-size: 20px;
+  color: #4575a5;
+  background: none;
+}
+
+.tema1 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 25px;
+  background: url(../img/秦皇岛旅游局.png);
+  background-size: 100%;
+  height: 180px;
+  width: 250px;
+  margin: 50px 0 0 100px;
+  border: 3px solid MidnightBlue;
+}
+
+.tema1 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  opacity: 0.8;
+}
+
+.tema1 > a:hover {
+  opacity: 1;
+}
+
+.tema2 {
+  position: absolute;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 60px;
+  border: 3px solid MidnightBlue;
+  background: url(../img/tema-galeria-bg.jpg);
+  background-size: 100%;
+  left: 76%;
+  width: 250px;
+  height: 150px;
+  font-weight: bold;
+}
+
+.tema2 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  opacity: 0.8;
+}
+
+.tema2 > a:hover {
+  opacity: 1;
+}
+
+.tema3 {
+  left: 0;
+  position:absolute;
+  text-align:center;
+  top: 100px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/natureza/natureza1.jpg);
+  background-size: cover;
+  z-index: 1;
+  height: 180px;
+  width: 270px;
+  margin: 200px 0 0 45%;
+  border: 3px solid MidnightBlue;
+}
+
+.tema3 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 180px;
+}
+
+.tema3 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 160px;
+}
+
+.tema4 {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/cultura/cultura1.jpg);
+  background-size: 100%;
+  height: 200px;
+  width: 280px;
+  margin: 300px 0 0 20%;
+  border: 3px solid MidnightBlue;
+}
+
+.tema4 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+
+.tema4 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 180px;
+}
+
+.tema5 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 85px;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/contactos/contactos.png);
+  background-size: 100%;
+  height: 80px;
+  width: 230px;
+  margin: 450px 0 0 70%;
+  border: 3px solid MidnightBlue;
+}
+
+.tema5 a {
+    opacity: 0.8;
+}
+
+.tema5 a:hover {
+  opacity: 1;
+}
+
+
+.tema6 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 110px;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/lazer/lazer1.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 200px;
+  margin: 250px 0 0 80%;
+  border: 3px solid MidnightBlue;
+}
+
+.tema6 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+}
+
+.tema6 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+.tema7 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 20px;
+  background: url(../img/metereologia.jpg);
+  background-size: 100%;
+  height: 55px;
+  width: 200px;
+  margin: 175px 0 0 100px;
+  border: 3px solid MidnightBlue;
+}
+
+.tema_texto {
+  opacity: 0.8;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 1020px){
+
+/* Homepage */
+
+/* Body da Homepage */
+
+.homepage {
+background-image: url(../img/backgrounds/bg.jpg);
+height: 1000px;
+background-position: center center;
+background-repeat: no-repeat;
+
+overflow: hidden;
+}
+
+/* Menu e submenu da Homepage */
+
+.tema3:hover .menu, .tema4:hover .menu, .tema6:hover .menu{
+bottom:0px;
+height: 100%;
+}
+
+.menu {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #001429;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.menu > li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 20px;
+  height: 10%;
+  padding: 15px;
+  margin-top: -10%;
+}
+
+li:hover > .menu {
+  background-color: none;
+}
+
+.tema1 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 25px;
+  background: url(../img/brasão.jpg);
+  background-size: 100%;
+  height: 180px;
+  width: 250px;
+  margin: 50px 0 0 51px;
+  border: 3px solid MidnightBlue;
+}
+
+.tema1 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  opacity: 0.8;
+}
+
+.tema1 > a:hover {
+  opacity: 1;
+}
+
+.tema2 {
+  position: absolute;
+  line-height: 100px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 50px;
+  border: 3px solid MidnightBlue;
+  background: url(../img/tema-galeria-bg.jpg);
+  background-size: 100%;
+  left: 67%;
+  width: 250px;
+  height: 180px;
+  font-weight: bold;
+}
+
+.tema2 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 185px;
+  opacity: 0.8;
+}
+
+.tema2 > a:hover {
+  opacity: 1;
+}
+
+.tema3 {
+  left: 0;
+  position:absolute;
+  text-align:center;
+  top: 100px;
+  width: 100%;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/natureza/natureza1.jpg);
+  background-size: cover;
+  z-index: 1;
+  height: 180px;
+  width: 270px;
+  margin-left: 35%;
+  margin-top: 30px;
+  border: 3px solid MidnightBlue;
+}
+
+.tema3 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 180px;
+}
+
+.tema3 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 160px;
+}
+
+.tema4 {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/cultura/cultura1.jpg);
+  background-size: 100%;
+  height: 180px;
+  width: 250px;
+  margin: 300px 0 0 5%;
+  border: 3px solid MidnightBlue;
+}
+
+.tema4 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 200px;
+}
+
+.tema4 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 180px;
+}
+
+.tema5 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 85px;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/contactos/contactos.png);
+  background-size: 100%;
+  height: 80px;
+  width: 230px;
+  margin: 340px 0 0 70%;
+  border: 3px solid MidnightBlue;
+}
+
+.tema5 a {
+  opacity: 0.8;
+}
+
+.tema5 a:hover {
+  opacity: 1;
+}
+
+.tema6 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 110px;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/lazer/lazer1.jpg);
+  background-size: cover;
+  height: 180px;
+  width: 270px;
+  margin: 300px 0 0 35%;
+  border: 3px solid MidnightBlue;
+}
+
+.tema6 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+}
+
+.tema6 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+}
+
+.tema7 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 20px;
+  background: url(../img/metereologia.jpg);
+  background-size: 100%;
+  height: 55px;
+  width: 200px;
+  margin: 175px 0 0 100px;
+  border: 3px solid MidnightBlue;
+}
+
+.tema_texto {
+  opacity: 0.8;
+}
+}
+
+@media only screen and (max-width: 480px){
+
+
+/* Geral */
+
+* {
+  font-family: 'Crimson Text', serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #001429;
+  text-decoration: none;
+}
+
+body {
+  overflow: scroll;
+  background: #B0D1f1
+}
+
+/* Homepage */
+
+/* Body da Homepage */
+
+.homepage {
+  background: #B0D1F1;
+}
+
+/* Header da Homepage */
+
+#logo {
+  height: 90%
+}
+
+#slogan {
+  display: none;
+  font-size: 15px;
+  position: absolute;
+  margin-top: 10%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #4575a5;
+  font-weight: bold;
+  cursor: none;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: #001429;
+  height: 65px;
+}
+
+.flex-container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.traducao {
+  margin: 3px 0 12px 0;
+  list-style-type: none;
+  padding: 8px;
+}
+
+.traducao:hover {
+  background-color: silver;
+}
+
+
+  /* Menu e submenu da Homepage */
+
+.temas {
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.tema3:hover .menu, .tema4:hover .menu, .tema6:hover .menu {
+  bottom:0px;
+  height: 100%;
+}
+
+.menu {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #001429;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.menu > li {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 60px;
+  height: 5%;
+  padding-top: 60px;
+  margin-top: -20%;
+}
+
+.menu > a {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+li:hover > .menu {
+  background-color: none;
+}
+
+.temas a {
+  color: #4575a5;
+  text-decoration: none;
+  background-color: #001429;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.menu a {
+  font-size: 20px;
+  color: #4575a5;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tema1 {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 10px;
+  background: url(../img/brasão.jpg);
+  background-size: 100%;
+  height: 150px;
+  width: 350px;
+  border: 3px solid MidnightBlue;
+  margin: 20% 0 0 0%;
+}
+
+.tema1 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height:0px;
+  opacity: 0.8;
+}
+
+.tema1 > a:hover {
+  opacity: 1;
+}
+
+.tema2 {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  border: 3px solid MidnightBlue;
+  background: url(../img/tema-galeria-bg.jpg);
+  background-size: 100%;
+  height: 150px;
+  width: 350px;
+  font-weight: bold;
+  margin-top: 270px;
+  left:45px;
+}
+
+.tema2 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  opacity: 0.8;
+}
+
+.tema2 > a:hover {
+  opacity: 1;
+}
+
+.tema3 {
+  position: absolute;
+  text-align:center;
+  width: 100%;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/natureza/natureza1.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 350px;
+  border: 3px solid MidnightBlue;
+  margin: 400px 0 0 45px;
+}
+
+.tema3 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  opacity: 0.8;
+}
+
+.tema3 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0px;
+  opacity: 1;
+}
+
+.tema4 {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/cultura/cultura1.jpg);
+  background-size: 100%;
+  height: 150px;
+  width: 350px;
+  border: 3px solid MidnightBlue;
+  margin: 660px 0 0 0px;
+}
+
+.tema4 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  opacity: 0.8;
+}
+
+.tema4 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0px;
+  opacity: 1;
+}
+
+.tema6 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 110px;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/lazer/lazer1.jpg);
+  background-size: cover;
+  height: 150px;
+  width: 350px;
+  margin: 870px 0 0 0px;
+  border: 3px solid MidnightBlue;
+}
+
+.tema6 > a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+  opacity: 0.8;
+}
+
+.tema6 > .menu a {
+  text-align: center;
+  vertical-align: middle;
+  line-height: 0px;
+  opacity: 1;
+}
+
+.tema7 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 20px;
+  background: url(../img/metereologia.jpg);
+  background-size: 100%;
+  height: 80px;
+  width: 350px;
+  margin: 125px 0 0 0px;
+  border: 3px solid MidnightBlue;
+}
+
+.tema5 {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 85px;
+  font-weight: bold;
+  font-size: 30px;
+  background: url(../img/imagens-galeria/contactos/contactos.png);
+  background-size: 100%;
+  height: 150px;
+  width: 350px;
+  margin: 1065px 0 0 0;
+  border: 3px solid MidnightBlue;
+}
+
+.tema5 a {
+    opacity: 0.8;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 150px;
+}
+
+.tema5 a:hover {
+  opacity: 1;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 150px;
+}
+}

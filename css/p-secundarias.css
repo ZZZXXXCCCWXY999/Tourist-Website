@@ -1,0 +1,1085 @@
+/* Geral */
+
+* {
+    font-family: 'Crimson Text', serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #6198bf;
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Banner das páginas secundárias */
+
+.logo {
+  margin: -15px 0 0 -15px;
+}
+
+.banner {
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
+  background: #001429;
+}
+
+.traducao_banner {
+  padding: 10px;
+  margin-right: -10px;
+}
+
+.traducao_banner:hover {
+  background-color: silver;
+}
+
+.banner > a {
+  color: #6198bf;
+}
+
+/* Menu das páginas secundárias */
+
+.menu_secundario {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 25px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
+  justify-content:space-around;
+  background-color: #FFFFFF;
+}
+
+.voltar, .tema_junta, .tema_cultura, .tema_galeria, .tema_natureza, .tema_lazer, .tema_metereologia, .tema_contactos {
+  background-color: white;
+  text-align: center;
+}
+
+.voltar:hover, .tema_junta:hover, .tema_cultura:hover, .tema_galeria:hover, .tema_natureza:hover, .tema_lazer:hover, .tema_metereologia:hover, .tema_contactos:hover {
+  background-color: rgb(217, 222, 215);
+}
+
+.tema_selecionado {
+  background-color: rgb(163, 222, 228);
+}
+
+.submenu {
+  display: none;
+  position: relative;
+  font-size: 20px;
+}
+
+.submenu > li {
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+
+}
+.tema_cultura:hover > .submenu{
+  background-color: rgb(217, 222, 215);
+  width: 10%;
+}
+
+.tema_natureza:hover > .submenu{
+  background-color: rgb(217, 222, 215);
+  width: 10%;
+}
+
+.tema_lazer:hover > .submenu{
+  background-color: rgb(217, 222, 215);
+  width: 8%;
+}
+
+.tema_cultura:hover > .submenu, .tema_natureza:hover > .submenu, .tema_lazer:hover > .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align:start;
+  -ms-flex-align:start;
+  align-items:flex-start;
+  position: absolute;
+}
+
+.tema_natureza:hover, .tema_lazer:hover, .tema_cultura:hover {
+  z-index: 2;
+  color: #6198bf;
+}
+
+/* Tema Junta de Freguesia */
+
+.brasao {
+  float: left;
+  margin-top: 20px;
+  display: block;
+}
+
+.titulo_junta {
+  position: top;
+  margin: 20px 20px 10px 30%;
+  font-size: 30px;
+  text-align: center;
+  color: #4575a5;
+  background-color: rgb(245, 239, 234);
+  padding: 5px;
+}
+
+.texto_junta {
+  margin: 20px 10% -50px 30%;
+  font-size: 25px;
+  text-align: left;
+  padding: 5px;
+  width: 930px;
+  background-color: rgb(245, 239, 234);
+  color: #1f4973;
+}
+
+.texto_junta > h4 {
+  color: #4575a5;
+}
+
+/* Fim do tema Junta de Freguesia */
+
+/* Tema cultura */
+
+.opcao_info {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.opcao_info_texto {
+  z-index: 1;
+  margin-top: 20px;
+  margin-left: -300px;
+}
+
+.opcao_info_texto:hover {
+  background-color: white;
+  opacity: 1;
+}
+
+/* Informações / Origem / Lendas */
+
+.titulo {
+  width: 50%;
+  font-size: 30px;
+  text-align: center;
+  color: #4575a5;
+  background-color: rgb(245, 239, 234);
+  padding: 5px;
+  margin: 20px 0 10px 25%;
+}
+
+.subtitulo {
+  width: 50%;
+  font-size: 25px;
+  text-align: center;
+  color: #4575a5;
+  background-color: rgb(245, 239, 234);
+  padding: 5px;
+  margin: 30px 0 10px 25%;
+}
+
+.paragrafo {
+  font-size: 25px;
+  text-align: justify;
+  padding: 5px;
+  margin: 20px 20px -50px 20px;
+  background-color: rgb(245, 239, 234);
+  color: #1f4973;
+}
+
+.paragrafo > h3 {
+  color: #4575a5;
+}
+
+.mapa_info {
+  margin: 35px 0 0 10px;
+}
+
+.mapa_lenda {
+  margin-top: 20px;
+}
+
+/* Fim do tema cultura */
+
+/* Tema natureza */
+
+/* Lagoas / Miradouros / Trilhos*/
+
+.img_pagina_lagoas {
+  margin: -300px 0 0 54.5%;
+  height: 300px;
+  width: 600px;
+}
+
+.miradouro1 {
+  margin: 30px 0 0 20%;
+}
+
+.miradouro2 {
+  margin: 30px 0 0 20%;
+}
+
+.p_trilhos h3 {
+  text-align: left;
+}
+
+/* Fim do tema natureza */
+
+/* Tema lazer */
+
+/* Hotelaria / Restauração / Campismo */
+
+.img_hotelaria {
+  margin-left: 33%;
+}
+
+.restaurantes {
+  text-align: center;
+}
+
+.img_restauracao {
+  margin-left: 30%;
+}
+
+/* Tema galeria */
+
+.paginas-secundarias {
+  background: #b0d1f1;
+}
+
+/* Slider automático da galeria */
+
+@-webkit-keyframes galeria_slider {
+
+0% {
+  left: 0;
+}
+
+20% {
+  left: 0;
+}
+
+25% {
+  left: -100%;
+}
+
+45% {
+  left: -100%;
+}
+
+50% {
+  left: -200%;
+}
+
+70% {
+  left: -200%;
+}
+
+75% {
+  left: -300%;
+}
+
+95% {
+  left: -300%;
+}
+
+100% {
+  left: -400%;
+}
+
+}
+
+@keyframes galeria_slider {
+
+0% {
+  left: 0;
+}
+
+20% {
+  left: 0;
+}
+
+25% {
+  left: -100%;
+}
+
+45% {
+  left: -100%;
+}
+
+50% {
+  left: -200%;
+}
+
+70% {
+  left: -200%;
+}
+
+75% {
+  left: -300%;
+}
+
+95% {
+  left: -300%;
+}
+
+100% {
+  left: -400%;
+}
+
+}
+
+.galeria_slider  {
+  overflow: hidden;
+}
+
+.galeria_slider figure img {
+  width: 20%;
+  float: left;
+}
+
+.galeria_slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  -webkit-animation: 20s galeria_slider infinite;
+  animation: 20s galeria_slider infinite;
+}
+
+.galeria_slider {
+  margin: 25px auto -52px;
+  height: 300px;
+  width: 600px;
+}
+
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.slider_center {
+  margin-top: 100px;
+}
+
+/* Opções da galeria */
+
+.opcoes-texto {
+  font-size: 50px;
+  color: #6198bf;
+  font-weight: bold;
+  background-color: white;
+  opacity: 0.5;
+  padding: 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.lagoas {
+  text-align: center;
+  margin: 70px 0 0 15%;
+}
+
+.campestre {
+  text-align: center;
+  margin: 70px 0 0 12%;
+}
+
+.trilhos {
+  text-align: center;
+  margin: 80px 0 0 15%;
+}
+
+.opcoes-texto:hover {
+  -webkit-transition: background-color 0.5s ease;
+  -o-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+  background-color: white;
+  opacity: 1;
+}
+
+.opcao3 {
+  margin-left: 50%;
+}
+
+/* Fotos da galeria */
+
+.fotos {
+  margin-top: -50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.fotos > img {
+  height: 400px;
+  width: 600px;
+  margin-top: 40px;
+}
+
+/* Metereologia */
+
+.metereo {
+  margin: 20px 0 -45px 25%;
+}
+
+/* Contactos */
+
+.p_contactos {
+  text-align: center;
+  margin: 50px 0 77px 0;
+  padding: 7.1%;
+  overflow: hidden;
+}
+
+.fa-facebook-official {
+  color: rgb(54, 51, 180);
+}
+
+.fa-facebook-official:hover {
+  color: blue;
+}
+
+.fa-twitter-square {
+  color: rgb(54, 115, 235);
+  margin-left: 50px;
+}
+
+.fa-twitter-square:hover {
+  color: rgb(20, 150, 223);
+}
+
+.fa-instagram {
+  color: rgb(246, 184, 49);
+  margin-left: 50px;
+}
+
+.fa-instagram:hover {
+  color: rgb(246, 177, 0);
+}
+
+.fa-youtube-play {
+  color: rgb(232, 53, 21);
+  margin-left: 50px;
+}
+
+.fa-youtube-play:hover {
+  color: red;
+}
+
+.fa-envelope-o {
+  color: gray;
+  margin-left: 50px;
+}
+
+.fa-envelope-o:hover {
+  color: white;
+}
+
+/* Comentários */
+
+input[type=text], input[type="submit"], select, textarea, label {
+    width: 90%;
+    margin: 6px 0 16px 20px;
+    padding: 12px;
+    font-size: 25px;
+    display: block;
+}
+
+label {
+  background-color: #265e89;
+  color: white;
+}
+
+input[type="submit"] {
+  background-color: #265e89;
+  color: white;
+  border: 0;
+  margin-left: 34%;
+  width: 25%;
+}
+
+.container {
+    margin: 80px 0 -60px 0;
+    background-color: #6198bf;
+    padding: 20px;
+}
+
+/* Página anterior e seguinte */
+
+.setas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.seta_direita_cima {
+  padding: 10px;
+  margin-left: -41%;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.seta_direita_baixo {
+  margin: -15px 0 0 -41%;
+  padding: 10px;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.seta_esquerda_cima {
+  padding: 10px;
+  margin-left: 41%;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.seta_esquerda_baixo {
+  margin: -15px 0 0 41%;
+  padding: 10px;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.seta_esquerda_cima:hover, .seta_esquerda_baixo:hover, .seta_direita_cima:hover, .seta_direita_baixo:hover {
+  opacity: 1;
+}
+
+.p_seguinte_lendas_1_superior {
+  margin: 0 0 -190px 91.9%;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.p_seguinte_lendas_1_superior:hover {
+  opacity: 1;
+}
+
+.p_seguinte_lendas_1 {
+  margin: 25px 0 -60px 91.8%;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.p_seguinte_lendas_1:hover {
+  opacity: 1;
+}
+
+.setas_lendas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.p_anterior_cima {
+  margin: 0 0 -130px 15%;
+  opacity: 0.5;
+  background-color: silver;
+}
+
+.p_anterior_cima_ultima {
+  margin: 151px 0 -130px 1%;
+  opacity: 0.5;
+  background-color: silver;
+}
+
+.p_seguinte_cima {
+  margin: -130px 9px -130px 0;
+  opacity: 0.5;
+  background-color: silver;
+}
+
+.p_anterior_cima:hover, .p_anterior_cima_ultima:hover, .p_seguinte_cima:hover {
+  opacity: 1;
+}
+
+.p_seguinte {
+  margin-right: 10px;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.p_seguinte:hover {
+  opacity: 1;
+}
+
+.p_anterior {
+  margin-left: 8%;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.p_anterior:hover {
+  opacity: 1;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 50px;
+  background: #001429;
+  height: 130px;
+}
+
+.footer_imgs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#slogan_footer {
+  position: absolute;
+  margin-top: 40px;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: #4575a5;
+  font-weight: bold;
+  cursor: none;
+}
+
+#slogan_footer_en {
+  position: absolute;
+  margin-top: 40px;
+  left: 33.5%;
+  transform: translate(-50%, -50%);
+  color: #4575a5;
+  font-weight: bold;
+  cursor: none;
+}
+
+.footer_img1, .footer_img2, .footer_img3 {
+  margin: 15px 20px 0 0;
+}
+
+/* Media queries */
+
+@media screen and (max-width: 480px){
+
+/* Menu das páginas secundárias */
+
+.menu_secundario {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-size: 25px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
+  justify-content:space-around;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.voltar, .tema_junta, .tema_cultura, .tema_galeria, .tema_natureza, .tema_lazer, .tema_metereologia, .tema_contactos {
+  background-color: white;
+  text-align: center;
+}
+
+.voltar:hover, .tema_junta:hover, .tema_cultura:hover, .tema_galeria:hover, .tema_natureza:hover, .tema_lazer:hover, .tema_metereologia:hover, .tema_contactos:hover {
+  background-color: rgb(217, 222, 215);
+}
+
+.tema_selecionado {
+  background-color: rgb(163, 222, 228);
+}
+
+.submenu {
+  display: none;
+  position: relative;
+  font-size: 20px;
+}
+
+.submenu > li {
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.tema_cultura:hover > .submenu{
+  background-color: rgb(217, 222, 215);
+  width: 100%;
+}
+
+.tema_natureza:hover > .submenu{
+  background-color: rgb(217, 222, 215);
+  width: 100%;
+}
+
+.tema_lazer:hover > .submenu{
+  background-color: rgb(217, 222, 215);
+  width: 100%;
+}
+
+.tema_cultura:hover > .submenu, .tema_natureza:hover > .submenu, .tema_lazer:hover > .submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align:start;
+  -ms-flex-align:start;
+  align-items:flex-start;
+  position: absolute;
+}
+
+.tema_natureza:hover, .tema_lazer:hover, .tema_cultura:hover {
+  z-index: 2;
+  color: #6198bf;
+}
+
+footer {
+  display: none;
+}
+
+.tema_selecionado {
+  background-color: #4575A5;
+}
+
+.opcoes-texto {
+  font-size: 100px;
+  padding: 30px;
+}
+
+.brasao {
+  float: left;
+  margin: 0% 0 0 30%;
+  display: block;
+}
+
+.titulo_junta {
+  position: top;
+  font-size: 30px;
+  text-align: center;
+  color: #4575a5;
+  background-color: rgb(245, 239, 234);
+  padding: 5px;
+  margin-top: 55%;
+  margin-bottom: 10px;
+  margin-left: 0%;
+}
+
+.texto_junta {
+  margin-left: 0%;
+  margin-top: 20px;
+  margin-bottom: -50px;
+  font-size: 25px;
+  text-align: left;
+  padding: 5px;
+  width: 930px;
+  background-color: rgb(245, 239, 234);
+  color: #1f4973;
+}
+
+.texto_junta > h4 {
+  color: #4575a5;
+}
+
+.lagoas {
+  text-align: center;
+  margin: 13% 0 0 28%;
+}
+
+.campestre {
+  text-align: center;
+  margin: 13% 0 0 20%;
+}
+
+.trilhos {
+  text-align: center;
+  margin: 13% 0 0 25%;
+}
+
+.img_pagina_lagoas {
+  margin-top: auto 0 0 22%;
+}
+
+.miradouro1 {
+  margin-left: 10%;
+}
+
+.miradouro2 {
+  margin-left: 10%;
+}
+
+/* Slider da galeria mobile */
+
+.galeria_slider  {
+  overflow: hidden;
+}
+
+.galeria_slider figure img {
+  width: 20%;
+  float: left;
+  margin-top: 100px;
+}
+
+.galeria_slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  -webkit-animation: 20s galeria_slider infinite;
+  animation: 20s galeria_slider infinite;
+}
+
+.galeria_slider {
+  margin: 25px auto -52px;
+  height: 300px;
+  width: 420px;
+}
+
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.slider_center {
+  margin-top: 0px;
+}
+
+.opcoes-texto {
+  font-size: 30px;
+  color: #6198bf;
+  font-weight: bold;
+  background-color: white;
+  opacity: 0.5;
+  padding: 30px;
+  position: absolute;
+  z-index: 1;
+}
+
+.lagoas {
+  text-align: center;
+  margin-top: 150px 0 0 30%;
+}
+
+.campestre {
+  text-align: center;
+  margin-top: 150px 0 0 25%;
+}
+
+.trilhos {
+  text-align: center;
+  margin: 150px 0 0 30%;
+}
+
+/* Tema Junta de Freguesia */
+
+.brasao {
+  margin: 100px 0 0 20px;
+  display: block;
+  width: 20%
+}
+
+.titulo_junta {
+  position:absolute;
+  font-size: 30px;
+  text-align: center;
+  color: #4575a5;
+  background-color: rgb(245, 239, 234);
+  padding: 0px;
+  margin-top: 20px 0 10px 0;
+}
+
+.texto_junta {
+  max-width: 400px;
+  margin: 100px 0 -50px 5%;
+  font-size: 25px;
+  text-align: left;
+  padding: 5px;
+  width: 930px;
+  background-color: rgb(245, 239, 234);
+  color: #1f4973;
+}
+
+.texto_junta > h4 {
+  color: #4575a5;
+}
+
+/* Fim do tema Junta de Freguesia */
+
+/* Tema Cultura */
+
+.opcao_info {
+  margin: 20px 0 0 20px;
+}
+
+.opcao_info_texto {
+  z-index: 1;
+  margin: 20px 0 0 -300px;
+}
+
+.opcao_info_texto:hover {
+  background-color: white;
+  opacity: 1;
+}
+
+/* Informações / Origem / Lendas */
+
+.titulo {
+  width: auto;
+  font-size: 30px;
+  text-align: center;
+  color: #4575a5;
+  background-color: rgb(245, 239, 234);
+  padding: 5px;
+  margin: 20px 0 10px 0;
+}
+
+.subtitulo {
+  width: 50%;
+  font-size: 25px;
+  text-align: center;
+  color: #4575a5;
+  background-color: rgb(245, 239, 234);
+  padding: 5px;
+  margin: 30px 0 10px 25%;
+}
+
+.paragrafo {
+    font-size: 25px;
+    text-align: justify;
+    padding: 5px;
+    margin: 20px 0 -50px 0;
+    background-color: rgb(245, 239, 234);
+    color: #1f4973;
+}
+
+.paragrafo > h3 {
+  color: #4575a5;
+}
+
+.mapa_info {
+  margin: 0;
+  width: 400px;
+}
+
+.mapa_lenda {
+  margin-top: 20px;
+}
+
+/* Fim do tema cultura */
+
+.p_seguinte_lendas_1 {
+    margin: 25px 0 -60px 75%;
+    background-color: silver;
+    opacity: 0.5;
+  }
+
+.p_seguinte_lendas_1_superior {
+  margin: 0 0 -150px 330px;
+  background-color: silver;
+  opacity: 0.5;
+}
+
+.seta_direita_baixo {
+  margin-top: -15px;
+  padding: 10px;
+  background-color: silver;
+  opacity: 0.5;
+  margin-left: 0%;
+}
+
+.mapa_lenda {
+  margin: 20px 0 0 25px;
+  width: 90%;
+}
+
+.miradouro1 {
+  margin-left: 0%;
+  margin-top: 30px;
+  height: 90%;
+  width: 100%
+}
+
+.miradouro2 {
+  margin-left: 0%;
+  margin-top: 30px;
+  height: 90%;
+  width: 100%
+}
+
+.p_trilhos h3 {
+  text-align: left;
+}
+
+.trilho1 {
+  height: 50%;
+  width: 100%
+}
+
+.img_hotelaria {
+  margin-left: 0%;
+  height: 90%;
+  width: 100%
+}
+
+.img_restauracao{
+  margin: 0;
+  height: 90%;
+  width: 100%
+}
+
+.metereo {
+  margin: 0px;
+  height: 90%;
+  width: 100%
+}
+}
